@@ -29,10 +29,10 @@ This project will develop a web-based color tool app aimed at helping artists, d
 
 ## Tools and Libraries (ideas for now)
 - **Frontend**: React.js for building the user interface, Chroma.js for color manipulation, and React Color for implementing color pickers.
-- **Backend**: Node.js with Express for server-side logic.
-- **Libraries**: Color Thief for color extraction from images, Redux for state management, Axios for HTTP requests, DropzoneJS for drag-and-drop file upload interface, Pica for resizing images in the browser.
-- **Accessibility and Validation**: React-axe for accessibility checks, Joi for data validation.
-- **Animation and Interaction**: Framer Motion for animations, Lottie for integrating high-quality animations.
+<!--- **Backend**: Node.js with Express for server-side logic.-->
+<!--- **Libraries**: Color Thief for color extraction from images, Redux for state management, Axios for HTTP requests, DropzoneJS for drag-and-drop file upload interface, Pica for resizing images in the browser.-->
+<!--- **Accessibility and Validation**: React-axe for accessibility checks, Joi for data validation.-->
+<!--- **Animation and Interaction**: Framer Motion for animations, Lottie for integrating high-quality animations.-->
 
 ## Step-by-Step Implementation
 1. **User Input for Base Colors**: Allow users to input base colors via a color picker, HEX codes, or image upload.
@@ -46,8 +46,8 @@ This project will develop a web-based color tool app aimed at helping artists, d
 ### Step 1: Build a Responsive Web Application
 
 -   **Frontend**: Use React.js to create a responsive design that adapts to various screen sizes, from desktops to smartphones. This ensures that the web application will look good and function well on all devices.
--   **Backend**: Node.js with Express can serve as the backend, handling API requests and integrating with databases or other services as needed.
--   **Database**: MongoDB can be a good choice for flexible data storage, especially if the app involves user customization and saving color palettes.
+<!---   **Backend**: Node.js with Express can serve as the backend, handling API requests and integrating with databases or other services as needed.-->
+<!---   **Database**: MongoDB can be a good choice for flexible data storage, especially if the app involves user customization and saving color palettes.-->
 
 ### Step 2: Convert Web Application to Mobile App
 
@@ -60,18 +60,18 @@ This project will develop a web-based color tool app aimed at helping artists, d
 ## Tools and Libraries to Consider
 
 -   **Frontend**: React.js, Bootstrap or Material-UI for responsive design
--   **Backend**: Node.js, Express
--   **APIs**: RESTful services
--   **Database**: MongoDB
+<!---   **Backend**: Node.js, Express-->
+<!---   **APIs**: RESTful services-->
+<!---   **Database**: MongoDB-->
 -   **Mobile**: React Native, Cordova, or PhoneGap
 
 ## Personal Learning Goals
 
 This project not only aims to create a valuable tool for designers but also serves as a platform for personal and professional development in several key areas of web development and software engineering:
 
-### Using Node.js and JavaScript Libraries
-- **Goal**: Gain deeper practical experience in backend development using Node.js, understanding its asynchronous programming model and event-driven architecture.
-- **Action Plan**: Implement the server-side logic using Node.js, and integrate various JavaScript libraries for specific features like color manipulation (Chroma.js) and image processing (Color Thief).
+<!--### Using Node.js and JavaScript Libraries-->
+<!--- **Goal**: Gain deeper practical experience in backend development using Node.js, understanding its asynchronous programming model and event-driven architecture.-->
+<!--- **Action Plan**: Implement the server-side logic using Node.js, and integrate various JavaScript libraries for specific features like color manipulation (Chroma.js) and image processing (Color Thief).-->
 
 ### Managing Git Professionally
 - **Goal**: Enhance skills in version control using Git, focusing on best practices for branching, merging, and collaborative development.
