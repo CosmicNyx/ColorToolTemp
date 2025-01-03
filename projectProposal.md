@@ -1,91 +1,59 @@
 # Project Proposal: Web-based Color Tool App
 
 ## Overview
-This project will develop a web-based color tool app aimed at helping artists, designers, and creatives effortlessly create and manage color palettes. This tool is designed to simplify the process of selecting harmonious colors for various design projects by providing both automatic and manual tools to generate, customize, and save color palettes. Featuring an intuitive interface and leveraging advanced color theory algorithms, the app will address common challenges associated with color scheme selection such as achieving color harmony, visualizing contrasts effectively, and ensuring accessibility. Integrating functionalities like image-based color extraction, interactive color wheels, and customizable color adjustments, the app will serve a broad range of users from novices to professional designers, thereby enhancing creativity and efficiency in their workflows.
+This project will develop a web-based color tool app aimed at helping artists, designers, and creatives effortlessly create and manage color palettes. Unlike existing tools, this app will focus on providing real-time feedback and insights into how colors interact with each other. It’s designed for users who struggle with understanding color relationships and want a tool that does the heavy lifting, ensuring their designs look cohesive and visually appealing. The app will allow users to input colors, adjust them, and receive immediate feedback on how those colors appear in context, even simulating how they look layered or combined. Additionally, the app will include tools to suggest and evaluate blending modes to achieve specific color effects.
+
+## Motivation
+As someone who often second-guesses how colors work together, I want to create a tool that bridges the gap between intuition and precision. While I can identify what looks good eventually, the process is slow and often frustrating. For instance, I struggle to determine whether a white on a blue background appears yellowish or if that’s just my perception. Similarly, deciding what shade of red works best against a specific background can be challenging. Additionally, I often experiment with blending layers in digital art but have difficulty predicting how they will affect the overall composition. This tool aims to simplify these decisions by providing clear, objective feedback and suggestions. It will serve as a companion for creatives who, like me, don’t fully trust their eyes when it comes to color.
 
 ## Objectives
-1. **Enhance Color Selection Process**: To provide an efficient, user-friendly platform that simplifies the process of creating and managing color palettes.
-2. **Improve Design Quality**: To help users achieve professional-quality design outcomes by ensuring color harmony and appealing aesthetic contrasts.
-3. **Increase Accessibility**: To incorporate tools that assess and improve the accessibility of color choices, making designs usable for people with various types of color vision.
-4. **Facilitate Creative Exploration**: To offer advanced tools for creative experimentation with color schemes, encouraging users to explore and innovate beyond traditional color combinations.
-5. **Integrate with Professional Tools**: To ensure compatibility with major design software and platforms, enhancing the app's utility in professional design workflows.
+1. **Simplify Color Interactions**: Help users understand how colors influence each other in real time.
+2. **Provide Reliable Feedback**: Offer objective evaluations of color combinations and blending effects to enhance confidence in design choices.
+3. **Encourage Experimentation**: Enable users to explore and test color schemes and blending modes without fear of making mistakes.
+4. **Save Time**: Minimize the trial-and-error process associated with color selection.
 
 ## Features
-### Color Detection and Analysis
-- **Dominant Color Extraction**: Use an algorithm to analyze images uploaded by users to detect and display the dominant color.
-- **Color Palette Generation**: From the dominant color, generate a color palette that includes complementary, analogous, and triadic colors.
 
-### Color Specification
-- **Direct Color Input**: Allow users to input a color directly (via HEX, RGB, or color picker).
-- **Color Modification Tools**: Provide sliders for adjusting hue, saturation, and brightness.
+### Real-Time Color Analysis
+- **Layer Interaction Feedback**: Simulate how colors appear when layered and provide insights on perceived color changes.
+- **Contrast Check**: Automatically assess contrast levels and suggest adjustments for better readability and visual impact.
 
-### Color Suggestion
-- **Smart Color Recommendations**: Implement a feature where if a user wants a color to appear as a certain shade (like red), the tool can suggest modifications to achieve the desired hue.
-- **Contextual Suggestions**: Offer suggestions based on the usage context of the color, like whether it’s for text, backgrounds, or accents.
+### Color Suggestion Tools
+- **Targeted Adjustments**: Allow users to specify a desired effect (e.g., make this part look more red) and suggest precise color modifications.
+- **Contextual Feedback**: Provide suggestions based on the intended use, such as backgrounds, text, or accents.
+- **Blending Mode Recommendations**: Suggest blending modes (e.g., multiply, overlay, screen) to achieve the desired visual effect in layered designs.
 
-### Interactive UI Elements
-- **Interactive Color Wheel**: Implement an interactive color wheel where users can visually pick colors and see the relations between different colors.
-- **Preview Area**: Provide a preview area where users can see how their chosen colors work together in a mock layout or design.
+### Interactive Tools
+- **Dynamic Layering**: Let users create and manipulate layers to visualize how colors interact in complex designs.
+- **Visual Comparison Mode**: Enable side-by-side comparisons of different color combinations and blending options.
+- **Preview Options**: Simulate how colors will look in specific environments, such as light or dark themes.
 
-## Tools and Libraries (ideas for now)
-- **Frontend**: React.js for building the user interface, Chroma.js for color manipulation, and React Color for implementing color pickers.
-<!--- **Backend**: Node.js with Express for server-side logic.-->
-<!--- **Libraries**: Color Thief for color extraction from images, Redux for state management, Axios for HTTP requests, DropzoneJS for drag-and-drop file upload interface, Pica for resizing images in the browser.-->
-<!--- **Accessibility and Validation**: React-axe for accessibility checks, Joi for data validation.-->
-<!--- **Animation and Interaction**: Framer Motion for animations, Lottie for integrating high-quality animations.-->
-
-## Step-by-Step Implementation
-1. **User Input for Base Colors**: Allow users to input base colors via a color picker, HEX codes, or image upload.
-2. **Color Harmony Algorithm**: Calculate complementary and contrasting colors to complete the palette.
-3. **Palette Customization**: Provide sliders for adjusting the shade, saturation, and brightness of the colors.
-4. **Palette Visualization**: Display the initial colors alongside the suggested palette in a visual format.
-5. **Feedback and Iteration**: Enable users to accept, reject, or shuffle the color suggestions.
-6. **Save and Export Options**: Allow users to save and export their final palette in various formats suitable for use in different design tools.
+## Tools and Libraries
+- **Frontend**: React.js for a dynamic user interface, Chroma.js for advanced color manipulation, and React Color for intuitive color pickers.
+- **Backend (Optional)**: Node.js for API handling, if saving user palettes or generating suggestions server-side is required.
+- **Additional Libraries**: Color.js for precise color computations, and libraries for drag-and-drop UI interactions.
 
 ## Development Phases
-### Step 1: Build a Responsive Web Application
 
--   **Frontend**: Use React.js to create a responsive design that adapts to various screen sizes, from desktops to smartphones. This ensures that the web application will look good and function well on all devices.
-<!---   **Backend**: Node.js with Express can serve as the backend, handling API requests and integrating with databases or other services as needed.-->
-<!---   **Database**: MongoDB can be a good choice for flexible data storage, especially if the app involves user customization and saving color palettes.-->
+### Phase 1: Core Functionality
+- Implement real-time color feedback for layered designs.
+- Develop tools for inputting and adjusting colors.
+- Create a responsive interface suitable for desktop and mobile devices.
 
-### Step 2: Convert Web Application to Mobile App
+### Phase 2: Advanced Features
+- Add contextual feedback and targeted adjustment tools.
+- Enable saving and exporting color palettes.
+- Introduce simulation modes for different environments and themes.
+- Implement blending mode recommendations for layered compositions.
 
--   **Progressive Web App (PWA)**: Initially, consider turning the web application into a Progressive Web App. PWAs can be installed on mobile devices and look and feel like native apps while still being a website under the hood. They support offline functionality, push notifications, and can be added directly to the home screen of smartphones.
--   **Frameworks for Mobile Development**:
-    -   **React Native**: Use React Native to convert React components into native mobile app components, allowing to maintain a single codebase for both the web app and mobile app.
-    -   **Cordova/PhoneGap**: Alternatively, tools like Cordova or PhoneGap can wrap your web application in a native container, which can be deployed as a native app, accessing device features and appearing in app stores.
-
-
-## Tools and Libraries to Consider
-
--   **Frontend**: React.js, Bootstrap or Material-UI for responsive design
-<!---   **Backend**: Node.js, Express-->
-<!---   **APIs**: RESTful services-->
-<!---   **Database**: MongoDB-->
--   **Mobile**: React Native, Cordova, or PhoneGap
+### Phase 3: User Testing and Refinement
+- Gather feedback from creatives to refine features and usability.
+- Optimize performance and accessibility to ensure a seamless experience.
 
 ## Personal Learning Goals
+1. **Understanding Color Science**: Deepen my knowledge of how colors interact and how to model those interactions programmatically.
+2. **Improving UI/UX Design**: Gain experience in designing interfaces that prioritize user needs and simplify complex workflows.
+3. **Mastering React**: Build a robust application using React, focusing on reusable components and efficient state management.
 
-This project not only aims to create a valuable tool for designers but also serves as a platform for personal and professional development in several key areas of web development and software engineering:
-
-<!--### Using Node.js and JavaScript Libraries-->
-<!--- **Goal**: Gain deeper practical experience in backend development using Node.js, understanding its asynchronous programming model and event-driven architecture.-->
-<!--- **Action Plan**: Implement the server-side logic using Node.js, and integrate various JavaScript libraries for specific features like color manipulation (Chroma.js) and image processing (Color Thief).-->
-
-### Managing Git Professionally
-- **Goal**: Enhance skills in version control using Git, focusing on best practices for branching, merging, and collaborative development.
-- **Action Plan**: Use Git for source code management, adhere to a consistent commit message format, and practice merging branches for feature integration without conflicts.
-
-### Learning React
-- **Goal**: Develop expertise in React for building dynamic user interfaces, understanding component lifecycle, state management, and hooks.
-- **Action Plan**: Build the entire frontend using React, utilize state management tools like Redux, and create reusable components that interact through props and state.
-
-### Integrating and Utilizing APIs
-- **Goal**: Improve ability to integrate third-party APIs and develop custom APIs to enhance application functionality.
-- **Action Plan**: Utilize public APIs for additional features (like Adobe Color API for color ideas) and create a custom API for the app to handle operations like saving and retrieving user-generated color palettes.
-
-### Summary
-By achieving these learning goals, the project will not only result in a robust application that will hopefully help me with illustrations in a way I have not yet found with any other program, but also significantly boost my skills in web development, and learning new things by attempting to use it
-
-
+## Summary
+This project is a personal and professional journey to tackle a problem I face daily: understanding and working with colors effectively. By creating a tool that provides objective feedback, simplifies color decisions, and suggests blending modes, I hope to empower myself and others to create beautiful, harmonious designs with confidence.
